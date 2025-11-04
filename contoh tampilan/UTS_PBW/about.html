@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me - Selpia Shop</title>
+    <style>
+        /* Reset dasar */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+        }
+
+        body {
+            background: linear-gradient(135deg, #ff9a9e, #fad0c4);
+            color: #333;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .container {
+            background: #fff;
+            border-radius: 15px;
+            padding: 40px;
+            max-width: 800px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 20px;
+            color: #ff4d6d;
+            font-size: 2em;
+        }
+
+        h1::after {
+            content: "";
+            display: block;
+            width: 60px;
+            height: 3px;
+            background: #ff4d6d;
+            margin: 10px auto 0;
+            border-radius: 2px;
+        }
+
+        p {
+            line-height: 1.8;
+            margin-bottom: 20px;
+            text-align: justify;
+        }
+
+        /* Highlight untuk kata kunci */
+        .highlight {
+            color: #ff4d6d;
+            font-weight: bold;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Tentang Selpia Shop</h1>
+        <p>Saya adalah <span class="highlight">Selpia</span>, pemilik dari <span class="highlight">Selpia Shop</span>. Berawal dari passion untuk berbelanja dan berbagi produk berkualitas, saya memutuskan untuk membuat toko online ini agar setiap orang bisa menemukan produk favorit mereka dengan mudah dan nyaman. Visi saya adalah menghadirkan pengalaman belanja yang menyenangkan dan terpercaya, di mana pelanggan merasa seperti berbelanja langsung dari sahabat mereka sendiri.</p>
+        <p>Selpia Shop fokus pada <span class="highlight">produk-produk pilihan</span> dengan kualitas terbaik dan harga yang ramah di kantong. Setiap produk dipilih dengan cermat untuk memenuhi kebutuhan sehari-hari maupun gaya hidup modern. Dari fashion, aksesoris, hingga kebutuhan rumah tangga, semua dikurasi agar pelanggan mendapatkan nilai lebih dari setiap pembelian.</p>
+        <p>Bagi saya, menjalankan toko online bukan hanya soal menjual produk, tetapi juga membangun <span class="highlight">hubungan dengan pelanggan</span>. Saya percaya pengalaman berbelanja yang personal dan pelayanan yang hangat dapat membuat setiap pelanggan merasa dihargai. Dengan semangat tersebut, Selpia Shop terus berkembang dan berinovasi, agar setiap kunjungan ke toko ini selalu menghadirkan sesuatu yang menyenangkan dan bermanfaat.</p>
+    </div>
+
+    <script>
+        // Highlight kata kunci saat diklik
+        document.querySelectorAll('.highlight').forEach(item => {
+            item.addEventListener('click', () => {
+                alert('Kamu menyoroti kata: ' + item.textContent);
+            });
+        });
+    </script>
+</body>
+</html>
+

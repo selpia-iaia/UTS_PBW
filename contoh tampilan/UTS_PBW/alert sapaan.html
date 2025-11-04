@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website Sederhana</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin-top: 100px;
+            background-color: #f4f4f4;
+        }
+
+        button {
+            background-color: #4a6cf7;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 16px;
+            border-radius: 8px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #3a5be0;
+        }
+    </style>
+</head>
+<body>
+    <h1>Halo, ini website saya!</h1>
+    <button id="tombol">Tampilkan Pesan</button>
+
+    <script>
+        // Menampilkan alert saat halaman dimuat
+        window.onload = function() {
+            alert("Halo, selamat datang di website saya!");
+        };
+
+        // Menampilkan alert juga saat tombol diklik
+        document.getElementById("tombol").addEventListener("click", function() {
+            alert("Halo, selamat datang di website saya!");
+        });
+    </script>
+</body>
+</html>

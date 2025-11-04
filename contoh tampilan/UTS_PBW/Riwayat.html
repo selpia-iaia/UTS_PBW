@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Riwayat Toko</title>
+
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(120deg, #ff4d6d, #f9f9f9);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+
+    .container {
+      background-color: white;
+      border-radius: 15px;
+      box-shadow: 0 0 20px rgba(0,0,0,0.1);
+      padding: 30px;
+      width: 80%;
+      max-width: 600px;
+      text-align: center;
+    }
+
+    h2 {
+      color: #333;
+    }
+
+    .garis {
+      width: 60%;
+      margin: 10px auto 20px;
+      border: 1px solid #ccc;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+
+    th {
+      background-color: #ff4d6d;
+      color: white;
+      padding: 10px;
+    }
+
+    td {
+      padding: 10px;
+      border-bottom: 1px solid #ddd;
+    }
+
+    .highlight {
+      background-color: #e6edff;
+    }
+
+    footer {
+      margin-top: 20px;
+      color: #666;
+      font-size: 0.9em;
+    }
+  </style>
+
+</head>
+<body>
+  <div class="container">
+    <h2>Riwayat Toko</h2>
+    <hr class="garis">
+
+    <table>
+      <thead>
+        <tr>
+          <th>Tahun</th>
+          <th>Perkembangan Toko</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>2023</td>
+          <td>SelpiShop berdiri sebagai toko kecil yang menjual aksesoris handmade secara offline.</td>
+        </tr>
+        <tr class="highlight">
+          <td>2024</td>
+          <td>Mulai memperluas penjualan melalui media sosial seperti Instagram dan Shopee.</td>
+        </tr>
+        <tr>
+          <td>2025</td>
+          <td>Meluncurkan website resmi <strong>SelpiShop</strong> untuk memudahkan pelanggan berbelanja online.</td>
+        </tr>
+        <tr>
+          <td>2026</td>
+          <td>Rencana membuka toko fisik dan memperkenalkan koleksi baru handmade fashion (Ongoing).</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <footer>
+      <p>© 2025 SelpiShop | Praktikum Web Dasar</p>
+    </footer>
+  </div>
+
+  <script>
+    // Interaksi sederhana pakai JavaScript
+    document.addEventListener("DOMContentLoaded", () => {
+      alert("Selamat datang di halaman Riwayat Toko SelpiShop!");
+    });
+  </script>
+</body>
+</html>
